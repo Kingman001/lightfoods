@@ -1,0 +1,43 @@
+.skewed-header{
+  width: 100vw;
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+.skewed-header > .header-image{
+  position: absolute;
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  filter: brightness(35%);
+}
+
+.skewed-header > .header-content-wrapper{
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.skewed-header > .header-content-wrapper > .header-content{
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skewed-header > .header-content-wrapper > .header-content > .logo{
+  font-size: 1.5rem;
+  background-color: #cea135;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 5px 15px 0 15px;
+}
+.skewed-header > .header-content-wrapper > .header-content > .logo :nth-child(2){
+  color: #11122b;
+}
